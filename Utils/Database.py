@@ -6,7 +6,7 @@ import mysql.connector
 
 # For retrieving data from database
 def get_data():
-    mydb = mysql.connector.connect(host='localhost', user='root', passwd='pass123', database='LIBRARY_RECORDS')
+    mydb = mysql.connector.connect(host='localhost', user='root', passwd='', database='LIBRARY_RECORDS')
     my_cursor = mydb.cursor()
     
     my_cursor.execute("SELECT * FROM books")
